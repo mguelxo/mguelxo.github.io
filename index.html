@@ -83,6 +83,14 @@
     audio {
       display: none;
     }
+
+    .visitor-counter {
+      position: absolute;
+      bottom: 10px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
   </style>
 </head>
 <body>
@@ -100,6 +108,10 @@
     <source src="at-your-best.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
+
+  <div class="visitor-counter">
+    <img src="https://visits.ml/api/mguelxo/mguelxo.github.io" alt="Visitor count">
+  </div>
 
   <script>
     const audio = document.getElementById('bgmusic');
@@ -125,7 +137,6 @@
       }
     }, 500);
   </script>
-
 
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script>
